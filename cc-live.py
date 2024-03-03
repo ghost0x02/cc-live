@@ -21,47 +21,60 @@ def is_valid_credit_card(number):
 
     return (total + checksum) % 10 == 0
 
-def get_card_type(number):
+def get_card_info(number):
+    card_type = "visa"
+    card_type = "Mastercard"
+    bank_name = "Bilinmeyen" 
+
     if number.startswith("4"):
-        return "Visa"
+        card_type = "Visa"
     elif number.startswith(("51", "52", "53", "54", "55")):
-        return "Mastercard"
+        card_type = "Mastercard"
     elif number.startswith("34") or number.startswith("37"):
-        return "American Express"
+        card_type = "American Express"
     elif number.startswith("6"):
-        return "Discover" 
+        card_type = "Discover"
     elif number.startswith("46") or number.startswith("1046"):
-        return "Akbank"
+        card_type = "Akbank"
+        bank_name = "Akbank"
     elif number.startswith("67"):
-        return "Yapıkredi"
+        card_type = "Yapıkredi"
+        bank_name = "Yapıkredi"
     elif number.startswith("62"):
-        return "Garanti Bankası"
-    elif number.startswith("62"):
-        return "Garanti Bankası"   
+        card_type = "Garanti Bankası"
+        bank_name = "Garanti Bankası"
     elif number.startswith("6304") or number.startswith(("6706", "6771", "6709")):
-        return "Laser"
+        card_type = "Laser"
     elif number.startswith("40") or number.startswith("51") or number.startswith("52") or number.startswith("53"):
-        return "Barclays"
+        card_type = "Barclays"
+        bank_name = "Barclays"
     elif number.startswith("49"):
-        return "Deutsche Bank"
+        card_type = "Deutsche Bank"
+        bank_name = "Deutsche Bank"
     elif number.startswith("55"):
-        return "ING Bank"
+        card_type = "ING Bank"
+        bank_name = "ING Bank"
     elif number.startswith("62"):
-        return "ICBC" 
+        card_type = "ICBC"
+        bank_name = "ICBC"
     elif number.startswith("45"):
-        return "SMBC"
-    else:
-        return "Bilinmeyen"
+        card_type = "SMBC"
+        bank_name = "SMBC"
+    elif number.startswith("63"):
+        card_type = "TEB"
+        bank_name = "TEB"
+
+    return card_type, bank_name
 
 def main():
-
     credit_card_number = input("Kredi kartı numarasını girin: ")
 
     if is_valid_credit_card(credit_card_number):
         print("Kart geçerli.")
 
-        card_type = get_card_type(credit_card_number)
+        card_type, bank_name = get_card_info(credit_card_number)
         print("Kart tipi:", card_type)
+        print("Banka:", bank_name)
     else:
         print("Kart geçersiz.")
 
