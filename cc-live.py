@@ -68,13 +68,14 @@ def get_card_info(number):
         bank_name = "TEB"
 def main():
   credit_card_number = input("Kredi kartı numarasını girin: ")
-    print(Fore.RED + '''
+    print(Fore.RED + '')
+    print("""
  ██████╗ █████╗ ██████╗ ██████╗
 ██╔════╝██╔══██╗██╔══██╗██╔══██╗
 ██║     ███████║██████╔╝██║  ██║
 ██║     ██╔══██║██╔══██╗██║  ██║
 ╚██████╗██║  ██║██║  ██║██████╔╝
- ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ''')
+ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ """)
     print(Fore.GREEN + '')
 
     if is_valid_credit_card(credit_card_number):
