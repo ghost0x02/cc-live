@@ -29,7 +29,27 @@ def get_card_type(number):
     elif number.startswith("34") or number.startswith("37"):
         return "American Express"
     elif number.startswith("6"):
-        return "Discover"
+        return "Discover" 
+    elif number.startswith("46") or number.startswith("1046"):
+        return "Akbank"
+    elif number.startswith("67"):
+        return "Yapıkredi"
+    elif number.startswith("62"):
+        return "Garanti Bankası"
+    elif number.startswith("62"):
+        return "Garanti Bankası"   
+    elif number.startswith("6304") or number.startswith(("6706", "6771", "6709")):
+        return "Laser"
+    elif number.startswith("40") or number.startswith("51") or number.startswith("52") or number.startswith("53"):
+        return "Barclays"
+    elif number.startswith("49"):
+        return "Deutsche Bank"
+    elif number.startswith("55"):
+        return "ING Bank"
+    elif number.startswith("62"):
+        return "ICBC" 
+    elif number.startswith("45"):
+        return "SMBC"
     else:
         return "Bilinmeyen"
 
