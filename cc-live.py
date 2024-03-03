@@ -66,9 +66,7 @@ def get_card_info(number):
     elif number.startswith("63"):
         card_type = "TEB"
         bank_name = "TEB"
-
-    return card_type, bank_name
-
+def main():
   credit_card_number = input("Kredi kartı numarasını girin: ")
 
     os.system("clear")
@@ -98,4 +96,8 @@ def get_card_info(number):
 
 if __name__ == "__main__":
     main()
+
+    return card_type, bank_name
+
+
 
