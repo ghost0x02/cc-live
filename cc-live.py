@@ -1,3 +1,4 @@
+import time
 from colorama import Fore, Style
 
 print(Fore.MAGENTA + '')
@@ -70,9 +71,12 @@ def main():
     credit_card_number = input("Kredi kartı numarasını girin: ")
 
     if is_valid_credit_card(credit_card_number):
-        print("Kart geçerli.")
-
+        time.sleep(0.5)
+        print("---------------")
+        print("Kart Durumu --> geçerli.")
+        print("---------------"
         card_type, bank_name = get_card_info(credit_card_number)
+        time.sleep(0.5)
         print("Kart tipi:", card_type)
         print("Banka:", bank_name)
     else:
