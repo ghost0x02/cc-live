@@ -2,6 +2,7 @@ import time
 import os
 from colorama import Fore, Style
 
+os.system("clear")
 print(Fore.MAGENTA + '')
 print("""
 _________________   ________________    ___________
