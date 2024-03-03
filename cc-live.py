@@ -23,7 +23,7 @@ def is_valid_credit_card(number):
 
 def get_card_type(number):
     if number.startswith("4"):
-        return "Visa"
+        return ""
     elif number.startswith(("51", "52", "53", "54", "55")):
         return "Mastercard"
     elif number.startswith("34") or number.startswith("37"):
