@@ -70,8 +70,19 @@ def get_card_info(number):
     return card_type, bank_name
 
 def main():
+
     credit_card_number = input("Kredi kartı numarasını girin: ")
+
     os.system("clear")
+    print(Fore.RED + '''
+ ██████╗ █████╗ ██████╗ ██████╗
+██╔════╝██╔══██╗██╔══██╗██╔══██╗
+██║     ███████║██████╔╝██║  ██║
+██║     ██╔══██║██╔══██╗██║  ██║
+╚██████╗██║  ██║██║  ██║██████╔╝
+ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ''')
+    print(Fore.GREEN + '')
+
     if is_valid_credit_card(credit_card_number):
         time.sleep(0.5)
         print("---------------")
@@ -89,3 +100,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
