@@ -1,4 +1,5 @@
 import time
+import os
 from colorama import Fore, Style
 
 print(Fore.MAGENTA + '')
