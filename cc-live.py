@@ -69,15 +69,18 @@ def get_card_info(number):
 
 def main():
     credit_card_number = input("Kredi kartı numarasını girin: ")
-
+    os.system("clear")
     if is_valid_credit_card(credit_card_number):
         time.sleep(0.5)
         print("---------------")
         print("Kart Durumu --> geçerli.")
-        print("---------------"
+        print("---------------")
         card_type, bank_name = get_card_info(credit_card_number)
         time.sleep(0.5)
+        print("---------------")
         print("Kart tipi:", card_type)
+        print("---------------")
+        time.sleep(0.7)
         print("Banka:", bank_name)
     else:
         print("Kart geçersiz.")
