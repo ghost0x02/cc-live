@@ -68,8 +68,6 @@ def get_card_info(number):
         bank_name = "TEB"
 def main():
   credit_card_number = input("Kredi kartı numarasını girin: ")
-
-    os.system("clear")
     print(Fore.RED + '''
  ██████╗ █████╗ ██████╗ ██████╗
 ██╔════╝██╔══██╗██╔══██╗██╔══██╗
