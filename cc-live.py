@@ -69,9 +69,7 @@ def get_card_info(number):
 
     return card_type, bank_name
 
-def main():
-
-    credit_card_number = input("Kredi kartı numarasını girin: ")
+  credit_card_number = input("Kredi kartı numarasını girin: ")
 
     os.system("clear")
     print(Fore.RED + '''
