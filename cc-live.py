@@ -10,7 +10,7 @@ __  ____/_  ____/   ___  /____  _/_ |  / /__  ____/
 _  /    _  /        __  /  __  / __ | / /__  __/
 / /___  / /___      _  /____/ /  __ |/ / _  /___
 \____/  \____/      /_____/___/  _____/  /_____/1.0v""")
-print("CODED BY ENESXSEC ANG GHOST0X02 ")
+print("CODED BY ENESXSEC AND GHOST0X02 ")
 print(Style.RESET_ALL)
 print(Fore.GREEN + '')
 
