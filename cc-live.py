@@ -93,6 +93,7 @@ def main():
         print("---------------")
         time.sleep(0.7)
         print("Banka:", bank_name)
+        print("---------------") 
     else:
         print("Kart geçersiz.")
 
